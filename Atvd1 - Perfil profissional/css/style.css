@@ -1,0 +1,130 @@
+/* Importa uma fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0c0c0c;
+  color: #333;
+}
+
+/* Layout geral com duas colunas */
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  background-color: #0a0009;
+}
+
+/* Coluna da esquerda (perfil) */
+.sidebar {
+  background-color: #6633CF;
+  color: white;
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar section {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.grupo{
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Coluna da direita (conteúdo) */
+.content {
+  width: 65%;
+  padding: 30px;
+}
+
+.content h1 {
+  margin: 0;
+  color: #6633CF;
+}
+
+.content h2{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #A987EF;
+}
+
+.topicos h2{
+    color: #D8DEFF;
+    margin-bottom: 10px;
+}
+
+.content p, li{
+    color: white;
+}
+
+.content h3 {
+  margin-top: 40px;
+  color: #6633CF;
+}
+
+.content hr {
+  border: none;
+  border-top: 2px solid #ffffff;
+  margin: 20px 0;
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+/* Links das redes sociais */
+.social-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Barras de idioma */
+.language-bar {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 6px;
+  margin: 4px 0;
+  border-radius: 4px;
+}
+
+.language-fill {
+  height: 100%;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.lang1 { width: 100%; }
+.lang2 { width: 60%; }
+.lang3 { width: 80%; }

@@ -1,0 +1,371 @@
+/*Reset básico para a inicialização*/
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/*Cabeçalho - estilo*/
+.topo {
+    background-color: rgba(2, 57, 86, 0.337);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding:1rem 2rem;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index:1000;
+    gap: 100px;
+    max-height: 80px;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color:#003049;
+    padding: 30px;
+    margin-top: -20px;
+    padding-bottom: 70px;
+    z-index: 1;
+
+}
+
+.menu ul{
+    list-style:none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight:400;
+}
+
+.btn-contato {
+    background-color: #003049;
+    padding: 0.75rem 1rem;
+}
+
+/*Hero: Banner principal*/
+.hero {
+    background-image: url('../img/paisagem--large.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+
+.hero-content {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  height: 60px;
+  color: #1e546a;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1e546a;
+  font-weight: 300;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  width: 400px;
+  text-align: center;
+}
+
+.btn-cta {
+  background-color: #f4a261;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #e76f51;
+}
+
+/*SEÇÃO: NOSSA HISTÓRIA*/
+/* Seção principal */
+/* Estilização geral da seção */
+.historia {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título */
+.historia h2 {
+  font-size: 2rem;
+  color: #3b5b7f;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.historia h2 strong {
+  color: #1c3c60;
+  font-weight: 600;
+}
+
+/* Subtítulo */
+.historia > p {
+  font-size: 1.1rem;
+  color: #c48c4a;
+  margin-bottom: 50px;
+}
+
+.historia > p strong {
+  color: #c48c4a;
+  font-weight: 500;
+}
+
+/* Conteúdo da seção */
+.hist-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Imagem de destaque grande */
+.hist-content .imagens img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Estilo do bloco tipo blog */
+.hist-content .blog {
+  max-width: 800px;
+  text-align: left;
+  display: flex;
+  gap:20px;
+}
+
+.hist-content .blog img {
+    height:350px;
+}
+
+.hist-content .blog h3 {
+  font-size: 1.8rem;
+  color: #395a83;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.hist-content .blog p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/*SEÇÃO: SERVIÇOS*/
+/* Seção principal */
+.servicos {
+  background-color: #2a516d;
+  padding: 80px 20px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*grid de servicos*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Título com ícone */
+.titulo-serv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.titulo-serv img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.titulo-serv h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.titulo-serv strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.servico {
+  background-color: transparent;
+  color: #fff;
+  text-align: left;
+}
+
+.servico img {
+  width: 30px;
+  margin-bottom: 10px;
+  filter: brightness(0) saturate(100%) invert(59%) sepia(75%) saturate(578%) hue-rotate(6deg) brightness(93%) contrast(88%);
+}
+
+.servico h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.servico p {
+  color: #dddddd;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsivo: empilha os blocos abaixo de 768px */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*SEÇÃO: DEPOIMENTOS*/
+.depoimentos {
+  background: url('../img/testemunha-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.depoimentos h2 {
+  font-size: 2.5rem;
+  color: #003049;
+  margin-bottom: 60px;
+}
+
+.depoimentos h2 strong {
+  color: #1d3557;
+}
+
+.depoimentos h2 .Icone {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.depoimentos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.depoimento {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 30px 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+}
+
+.depoimento img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  margin-top: -80px;
+  background-color: #fff;
+}
+
+.depoimento h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #003049;
+}
+
+.depoimento p {
+  font-size: 0.95rem;
+  color: #ee930c;
+  margin-bottom: 10px;
+}
+
+.depoimento blockquote {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .depoimentos-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento {
+    max-width: 90%;
+  }
+}
+
+/*FOOTER*/
+#contato {
+    background-color:#003049;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#contato p{
+    color: white;
+}
+
+#contato a{
+    padding: 3px;
+    background:#ee930c;
+    text-decoration: none;
+}
